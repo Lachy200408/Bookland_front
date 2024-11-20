@@ -1,9 +1,9 @@
-import { BUTTON_TYPES } from '/src/constants/button-types.js'
-import Button from '/src/components/common/Button.jsx'
-import XMarkIcon from '/src/components/icons/XMarkIcon.jsx'
-import ArchiveIcon from '/src/components/icons/ArchiveIcon.jsx'
-import EmptyArchiveIcon from '/src/components/icons/EmptyArchiveIcon.jsx'
-import '/src/styles/BookForm.css'
+import { BUTTON_TYPES } from '../../constants/button-types.js'
+import Button from '../common/Button.jsx'
+import XMarkIcon from '../icons/XMarkIcon.jsx'
+import ArchiveIcon from '../icons/ArchiveIcon.jsx'
+import EmptyArchiveIcon from '../icons/EmptyArchiveIcon.jsx'
+import '../../styles/BookForm.css'
 
 export default function CreateBookForm({
 	onCloseModal,

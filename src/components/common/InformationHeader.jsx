@@ -1,4 +1,4 @@
-import '/src/styles/InformationHeader.css'
+import '../../styles/InformationHeader.css'
 
 export default function InformationHeader({ children, classname }) {
 	return (

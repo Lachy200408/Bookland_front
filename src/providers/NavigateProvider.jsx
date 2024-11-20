@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import { navigateContext } from '/src/contexts/navigateContext.js'
-import { routes } from '/src/constants/routes.js'
-import { EVENTS } from '/src/constants/events.js'
-import NotFound from '/src/components/routes/NotFound.jsx'
+import { navigateContext } from '../contexts/navigateContext.js'
+import { routes } from '../constants/routes.js'
+import { EVENTS } from '../constants/events.js'
+import NotFound from '../components/routes/NotFound.jsx'
 
 export default function NavigateProvider({ children }) {
 	const [route, setRoute] = useState(window.location.pathname)

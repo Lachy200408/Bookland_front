@@ -1,4 +1,4 @@
-import { notificationContext } from '/src/contexts/notificationContext.js'
+import { notificationContext } from '../contexts/notificationContext.js'
 import { useState } from 'react'
 
 export default function NotificationProvider({ children }) {

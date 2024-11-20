@@ -1,18 +1,18 @@
-import { BUTTON_TYPES } from '/src/constants/button-types.js'
-import CommonSection from '/src/components/common/CommonSection.jsx'
-import Button from '/src/components/common/Button.jsx'
-import Loading from '/src/components/common/Loading.jsx'
-import Checkbox from '/src/components/common/Checkbox.jsx'
-import BooksView from '/src/components/views/BooksView.jsx'
-import CreateBookForm from '/src/components/views/CreateBookForm.jsx'
-import EditBookForm from '/src/components/views/EditBookForm.jsx'
-import ShareBookForm from '/src/components/views/ShareBookForm.jsx'
-import ReturnIcon from '/src/components/icons/ReturnIcon.jsx'
-import DownloadIcon from '/src/components/icons/DownloadIcon.jsx'
-import EditingIcon from '/src/components/icons/EditingIcon.jsx'
-import DeleteIcon from '/src/components/icons/DeleteIcon.jsx'
-import ShareIcon from '/src/components/icons/ShareIcon.jsx'
-import AddBookIcon from '/src/components/icons/AddBookIcon.jsx'
+import { BUTTON_TYPES } from '../../constants/button-types.js'
+import CommonSection from '../common/CommonSection.jsx'
+import Button from '../common/Button.jsx'
+import Loading from '../common/Loading.jsx'
+import Checkbox from '../common/Checkbox.jsx'
+import BooksView from '../views/BooksView.jsx'
+import CreateBookForm from '../views/CreateBookForm.jsx'
+import EditBookForm from '../views/EditBookForm.jsx'
+import ShareBookForm from '../views/ShareBookForm.jsx'
+import ReturnIcon from '../icons/ReturnIcon.jsx'
+import DownloadIcon from '../icons/DownloadIcon.jsx'
+import EditingIcon from '../icons/EditingIcon.jsx'
+import DeleteIcon from '../icons/DeleteIcon.jsx'
+import ShareIcon from '../icons/ShareIcon.jsx'
+import AddBookIcon from '../icons/AddBookIcon.jsx'
 import {
 	useAllBooks,
 	useCreateBook,
@@ -23,17 +23,17 @@ import {
 	useAllSharedBooks,
 	useShareBook,
 	useDeleteSharedBook
-} from '/src/hooks/useApiBooks.js'
+} from '../../hooks/useApiBooks.js'
 import { useEffect, useState } from 'react'
 import {
 	useAddBookForm,
 	useEditBookForm,
 	useShareBookForm
-} from '/src/hooks/useBookForm.js'
-import { useRemovedBooks } from '/src/hooks/useRemovedBooks.js'
-import { useNotificationContext } from '/src/contexts/notificationContext.js'
-import { download } from '/src/utils/download.js'
-import '/src/styles/Dashboard.css'
+} from '../../hooks/useBookForm.js'
+import { useRemovedBooks } from '../../hooks/useRemovedBooks.js'
+import { useNotificationContext } from '../../contexts/notificationContext.js'
+import { download } from '../../utils/download.js'
+import '../../styles/Dashboard.css'
 
 export default function Dashboard() {
 	const { addNotification } = useNotificationContext()

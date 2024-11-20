@@ -1,13 +1,13 @@
-import CommonSection from '/src/componentscommon/CommonSection.jsx'
-import Loading from '/src/componentscommon/Loading.jsx'
-import InformationHeader from '/src/componentscommon/InformationHeader.jsx'
-import Link from '/src/componentscommon/Link.jsx'
-import SocialList from '/src/componentscommon/SocialList.jsx'
+import CommonSection from '../common/CommonSection.jsx'
+import Loading from '../common/Loading.jsx'
+import InformationHeader from '../common/InformationHeader.jsx'
+import Link from '../common/Link.jsx'
+import SocialList from '../common/SocialList.jsx'
 import { useEffect } from 'react'
-import { useGetSocialUsers } from '/src/hooks/useApiUser.js'
-import { useNotificationContext } from '/src/contexts/notificationContext.js'
-import { useSessionContext } from '/src/contexts/sessionContext.js'
-import '/src/styles/Social.css'
+import { useGetSocialUsers } from '../../hooks/useApiUser.js'
+import { useNotificationContext } from '../../contexts/notificationContext.js'
+import { useSessionContext } from '../../contexts/sessionContext.js'
+import '../../styles/Social.css'
 
 export default function Social() {
 	const { addNotification } = useNotificationContext()

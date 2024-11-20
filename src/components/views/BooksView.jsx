@@ -1,5 +1,5 @@
-import Checkbox from '/src/componentscommon/Checkbox.jsx'
-import '/src/styles/BooksView.css'
+import Checkbox from '../common/Checkbox.jsx'
+import '../../styles/BooksView.css'
 
 export default function BooksView({ books, selectedBooks, onSelectBook }) {
 	const onCheckboxChange = (id) => {

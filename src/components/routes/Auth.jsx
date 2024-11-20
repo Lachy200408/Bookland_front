@@ -1,13 +1,13 @@
-import CommonSection from '/src/components/common/CommonSection.jsx'
-import Button from '/src/components/common/Button.jsx'
-import { ERRORS } from '/src/constants/errors.js'
-import { BUTTON_TYPES } from '/src/constants/button-types.js'
-import { MESSAGES } from '/src/constants/messages.js'
-import { useNotificationContext } from '/src/contexts/notificationContext.js'
-import { useSessionContext } from '/src/contexts/sessionContext.js'
-import { useLogin, useRegister, useLogout } from '/src/hooks/useAuth.js'
+import CommonSection from '../common/CommonSection.jsx'
+import Button from '../common/Button.jsx'
+import { ERRORS } from '../../constants/errors.js'
+import { BUTTON_TYPES } from '../../constants/button-types.js'
+import { MESSAGES } from '../../constants/messages.js'
+import { useNotificationContext } from '../../contexts/notificationContext.js'
+import { useSessionContext } from '../../contexts/sessionContext.js'
+import { useLogin, useRegister, useLogout } from '../../hooks/useAuth.js'
 import { useEffect, useRef, useState } from 'react'
-import '/src/styles/Auth.css'
+import '../../styles/Auth.css'
 
 export default function Auth() {
 	const username = useRef()

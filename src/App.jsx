@@ -1,7 +1,7 @@
-import Feedback from '/src/components/Feedback.jsx'
-import Footer from '/src/components/Footer.jsx'
-import Header from '/src/components/Header.jsx'
-import { useNavigateContext } from '/src/contexts/navigateContext.js'
+import Feedback from './components/Feedback.jsx'
+import Footer from './components/Footer.jsx'
+import Header from './components/Header.jsx'
+import { useNavigateContext } from './contexts/navigateContext.js'
 
 function App() {
 	const { route, page: Page } = useNavigateContext()

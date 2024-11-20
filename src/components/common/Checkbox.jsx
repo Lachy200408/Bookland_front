@@ -1,5 +1,5 @@
-import CheckIcon from '/src/components/icons/CheckIcon.jsx'
-import '/src/styles/Checkbox.css'
+import CheckIcon from '../icons/CheckIcon.jsx'
+import '../../styles/Checkbox.css'
 
 export default function Checkbox({ id, checked, onChange }) {
 	return (

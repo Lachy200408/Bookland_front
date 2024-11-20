@@ -1,6 +1,6 @@
-import { AVATARS } from '/src/constants/avatars.js'
-import Checkbox from '/src/components/common/Checkbox.jsx'
-import '/src/styles/SocialList.css'
+import { AVATARS } from '../../constants/avatars.js'
+import Checkbox from '../common/Checkbox.jsx'
+import '../../styles/SocialList.css'
 
 export default function SocialList({
 	users,

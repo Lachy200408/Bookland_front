@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
-import { routes } from '/src/constants/routes.js'
-import { useNavigateContext } from '/src/contexts/navigateContext.js'
-import { useSessionContext } from '/src/contexts/sessionContext.js'
-import Link from '/src/components/common/Link.jsx'
-import UserInfo from '/src/components/common/UserInfo.jsx'
+import { routes } from '../constants/routes.js'
+import { useNavigateContext } from '../contexts/navigateContext.js'
+import { useSessionContext } from '../contexts/sessionContext.js'
+import Link from './common/Link.jsx'
+import UserInfo from './common/UserInfo.jsx'
 import '/src/styles/Header.css'
 
 export default function Header() {

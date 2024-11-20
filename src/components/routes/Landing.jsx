@@ -1,9 +1,9 @@
-import { IMAGES_URL } from '/src/constants/resources-url.js'
-import Link from '/src/components/common/Link.jsx'
-import UserIcon from '/src/components/icons/UserIcon.jsx'
-import SendingMsg from '/src/components/icons/SendingMsg.jsx'
-import CommonSection from '/src/components/common/CommonSection.jsx'
-import '/src/styles/Landing.css'
+import { IMAGES_URL } from '../../constants/resources-url.js'
+import Link from '../common/Link.jsx'
+import UserIcon from '../icons/UserIcon.jsx'
+import SendingMsg from '../icons/SendingMsg.jsx'
+import CommonSection from '../common/CommonSection.jsx'
+import '../../styles/Landing.css'
 
 export default function Landing() {
 	return (

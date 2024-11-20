@@ -1,5 +1,5 @@
-import BackgroundGridContainer from '/src/components/common/BackgroundGrids.jsx'
-import '/src/styles/CommonSection.css'
+import BackgroundGridContainer from './BackgroundGrids.jsx'
+import '../../styles/CommonSection.css'
 
 export default function CommonSection({ className = '', children }) {
 	return (
