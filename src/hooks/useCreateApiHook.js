@@ -33,7 +33,9 @@ export const useCreateApiHook = (callback, callback_2) => {
 				setLoading(false)
 			})
 
-		reset()
+		setData(null)
+		setError(null)
+		setLoading(true)
 	}
 
 	return { fetching, data, error, loading, reset }
