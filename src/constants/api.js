@@ -14,7 +14,7 @@ const DINAMYC_URL = {
 }
 
 export const API = {
-	URL: 'http://localhost:3000',
+	URL: 'https://bookland-back.onrender.com',
 	AUTH: {
 		LOGIN: BASE_URL.AUTH + '/login',
 		SIGNUP: BASE_URL.AUTH + '/signup',
