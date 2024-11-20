@@ -20,6 +20,7 @@ export default function Social() {
 	} = useGetSocialUsers()
 
 	useEffect(() => {
+		if (!session || !session.active) return
 		getSocialUsers()
 	}, [])
 
