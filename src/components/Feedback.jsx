@@ -1,5 +1,5 @@
 import { useNotificationContext } from '../contexts/notificationContext.js'
-import XMarkIcon from './Icons/XMarkIcon.jsx'
+import XMarkIcon from './icons/XMarkIcon.jsx'
 import '../styles/Feedback.css'
 
 export default function Feedback() {
