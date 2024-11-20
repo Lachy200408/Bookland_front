@@ -50,13 +50,15 @@ export default function Footer() {
 							<strong>Contribution</strong>
 						</li>
 						<li>
-							<Link href="">Publish</Link>
+							<Link href="mailto:lachy200408@gmail.com">Publish</Link>
 						</li>
 						<li>
-							<Link href="">Developer</Link>
+							<Link href="https://lazaroparradev.onrender.com" target="_blank">
+								Developer
+							</Link>
 						</li>
 						<li>
-							<Link href="">Report error</Link>
+							<Link href="mailto:lachy200408@gmail.com">Report error</Link>
 						</li>
 					</ul>
 					<ul>
@@ -64,13 +66,28 @@ export default function Footer() {
 							<strong>Other services</strong>
 						</li>
 						<li>
-							<Link href="">Web design</Link>
+							<Link
+								href="https://lazaroparradev.onrender.com/#contact"
+								target="_blank"
+							>
+								Web design
+							</Link>
 						</li>
 						<li>
-							<Link href="">Landing page</Link>
+							<Link
+								href="https://lazaroparradev.onrender.com/#contact"
+								target="_blank"
+							>
+								Landing page
+							</Link>
 						</li>
 						<li>
-							<Link href="">Logo design</Link>
+							<Link
+								href="https://lazaroparradev.onrender.com/#contact"
+								target="_blank"
+							>
+								Logo design
+							</Link>
 						</li>
 					</ul>
 				</article>
@@ -78,27 +95,36 @@ export default function Footer() {
 					<p>Follow:</p>
 					<ul>
 						<li>
-							<a href="https://x.com/Lachy9716929882">
+							<a href="https://x.com/Lachy9716929882" target="_blank">
 								<TwitterIcon />
 							</a>
 						</li>
 						<li>
-							<a href="https://www.facebook.com/lazaro.parra.583/">
+							<a
+								href="https://www.facebook.com/lazaro.parra.583/"
+								target="_blank"
+							>
 								<FacebookIcon />
 							</a>
 						</li>
 						<li>
-							<a href="https://www.linkedin.com/in/lazaro-parra-gonzalez-47b55628a/">
+							<a
+								href="https://www.linkedin.com/in/lazaro-parra-gonzalez-47b55628a/"
+								target="_blank"
+							>
 								<LinkedInIcon />
 							</a>
 						</li>
 						<li>
-							<a href="mailto:lachy200408@gmail.com">
+							<a href="mailto:lachy200408@gmail.com" target="_blank">
 								<GmailIcon />
 							</a>
 						</li>
 						<li>
-							<a href="https://github.com/Lachy200408/Bookland">
+							<a
+								href="https://github.com/Lachy200408/Bookland_front"
+								target="_blank"
+							>
 								<GithubIcon />
 							</a>
 						</li>
