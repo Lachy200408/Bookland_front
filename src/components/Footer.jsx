@@ -1,8 +1,8 @@
-import FacebookIcon from './Icons/FacebookIcon.jsx'
-import GithubIcon from './Icons/GithubIcon.jsx'
-import GmailIcon from './Icons/GmailIcon.jsx'
-import LinkedInIcon from './Icons/LinkedInIcon.jsx'
-import TwitterIcon from './Icons/TwitterIcon.jsx'
+import FacebookIcon from './icons/FacebookIcon.jsx'
+import GithubIcon from './icons/GithubIcon.jsx'
+import GmailIcon from './icons/GmailIcon.jsx'
+import LinkedInIcon from './icons/LinkedInIcon.jsx'
+import TwitterIcon from './icons/TwitterIcon.jsx'
 import Link from './common/Link.jsx'
 import '/src/styles/Footer.css'
 
