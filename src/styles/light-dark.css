@@ -1,0 +1,25 @@
+@layer light-dark {
+	:root {
+		--light-shadow-color: #fff5;
+		--weak-light-shadow-color: #bbb5;
+		--mid-shadow-color: #8885;
+		--dark-shadow-color: #0005;
+
+		--color: rgb(3, 9, 32);
+		--background-color: rgb(240, 248, 255);
+		--shadow-neumorphism: inset -8px -8px 8px var(--dark-shadow-color),
+			inset 8px 8px 8px var(--light-shadow-color),
+			0px 8px 16px var(--dark-shadow-color);
+		--scrollbar-color: #03092050;
+		--landing-title-opacity: 0.8;
+	}
+	@media only screen and (prefers-color-scheme: dark) {
+		:root {
+			--color: rgb(240, 248, 255);
+			--background-color: rgb(3, 9, 32);
+			--shadow-neumorphism: ;
+			--scrollbar-color: #f0f8ff50;
+			--landing-title-opacity: 1;
+		}
+	}
+}

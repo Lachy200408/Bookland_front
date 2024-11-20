@@ -1,0 +1,168 @@
+.bookDialog {
+	position: fixed;
+	z-index: 1001;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: none;
+	backdrop-filter: blur(2rem);
+	border: none;
+	display: grid;
+	place-items: center;
+	padding-inline: 0.5rem;
+}
+
+.bookDialog .close-button {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	width: max-content;
+	height: max-content;
+	border-radius: 50%;
+	padding: 0.5rem;
+}
+
+.bookDialog .close-button > * {
+	display: block;
+	width: 2rem;
+	aspect-ratio: 1;
+	color: aliceblue;
+}
+
+.bookForm {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 1rem;
+	width: min(512px, 100%);
+}
+
+.bookForm label:not([for='book']) {
+	width: 100%;
+	display: grid;
+	gap: 0.25rem;
+}
+
+.bookForm label:not([for='book']) input[type='text'],
+.bookForm textarea {
+	border: 1px solid var(--color);
+	border-radius: 0.5rem;
+	padding: 0.4rem 0.6rem;
+	background: none;
+}
+
+.bookForm textarea {
+	padding: 0.5rem;
+	height: 8rem;
+	resize: none;
+	font-family: inherit;
+}
+
+.bookForm label:not([for='book']) input[type='text']:focus,
+.bookForm textarea:focus {
+	outline: 1px solid var(--color);
+}
+
+.bookForm label[for='book'] {
+	display: inline-block;
+	position: relative;
+	padding: 1rem 1.6rem;
+	border-radius: 1rem;
+	background-image: linear-gradient(to right, var(--blue), var(--light-blue));
+	color: aliceblue;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: transform 0.2s linear;
+}
+
+.bookForm label[for='book']::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	scale: 0.95;
+	border-radius: 16px;
+	z-index: -5;
+	background-image: linear-gradient(to right, #59a5d8, #84d2f6);
+	filter: blur(16px);
+	opacity: 0.5;
+	transition: opacity 0.2s linear 0s;
+}
+
+.bookForm label[for='book']:hover::before {
+	opacity: 0.8;
+}
+
+.bookForm label[for='book']:active {
+	transform: scale(0.95);
+}
+
+.bookForm label[for='book']:active::before {
+	opacity: 0.5;
+}
+
+.bookForm label[for='book'] > span.icon {
+	display: none;
+	width: 2rem;
+	aspect-ratio: 1;
+}
+
+.bookForm label[for='book'] > span.icon > * {
+	display: block;
+	width: 2rem;
+	aspect-ratio: 1;
+}
+
+.bookForm input#book {
+	display: none;
+}
+
+.bookFileViewer {
+	position: absolute;
+	bottom: 1rem;
+	left: 50%;
+	translate: -50% 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: max-content;
+	gap: 1rem;
+	padding: 0.5rem;
+	border-radius: 1rem;
+	background-image: linear-gradient(to bottom, #84d2f604, #84d2f608);
+}
+
+.bookFileViewer > * {
+	font-size: smaller;
+}
+
+.bookDialog .error {
+	color: var(--red);
+	font-size: smaller;
+	position: absolute;
+	bottom: 1rem;
+	left: 50%;
+	translate: -50% 0;
+}
+
+@media only screen and (max-width: 768px) {
+	.bookForm label[for='book'] {
+		padding: 0.5rem;
+	}
+
+	.bookForm label[for='book'] > span.icon {
+		display: block;
+	}
+	.bookForm label[for='book'] > span {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 384px) {
+	.bookFileViewer {
+		width: 90vw;
+	}
+}

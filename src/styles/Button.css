@@ -1,0 +1,102 @@
+.btn.primary,
+.btn.secondary {
+	position: relative;
+	padding: 1rem 1.6rem;
+	border: none;
+	border-radius: 16px;
+	background-image: linear-gradient(to right, var(--blue), var(--light-blue));
+	font-size: 1rem;
+	color: aliceblue;
+	transition: transform 0.2s linear 0s;
+	cursor: pointer;
+}
+
+.btn.primary::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	scale: 0.95;
+	border-radius: 16px;
+	z-index: -5;
+	background-image: linear-gradient(to right, #59a5d8, #84d2f6);
+	filter: blur(16px);
+	opacity: 0.5;
+	transition: opacity 0.2s linear 0s;
+}
+
+.btn.primary:hover::before {
+	opacity: 0.8;
+}
+
+.btn.primary:active {
+	transform: scale(0.95);
+}
+
+.btn.primary:active::before {
+	opacity: 0.5;
+}
+
+.btn.secondary {
+	padding: 0.6rem 1.2rem;
+	background-image: linear-gradient(to right, var(--blue), var(--light-blue));
+	transform: scale(0.95);
+}
+
+.btn.secondary:hover {
+	transform: scale(1);
+}
+
+.btn.secondary:active {
+	transform: scale(0.95);
+}
+
+.btn.tertiary {
+	position: relative;
+	border: none;
+	background: none;
+	font-size: 1rem;
+	cursor: pointer;
+	opacity: 0.7;
+	padding: 0.4rem 1rem;
+}
+
+.btn.tertiary:hover {
+	opacity: 1;
+}
+
+.btn.tertiary:active {
+	opacity: 0.7;
+}
+
+.btn:disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+@media only screen and (max-width: 768px) {
+	.btn.primary:hover::before {
+		opacity: 0.5;
+	}
+
+	.btn.secondary:hover {
+		transform: scale(0.95);
+	}
+
+	.btn.secondary:active {
+		transform: scale(0.85);
+	}
+
+	.btn.tertiary {
+		opacity: 1;
+		border-width: 1px;
+		border-style: solid;
+		border-top-color: var(--blue);
+		border-left-color: var(--blue);
+		border-bottom-color: var(--light-blue);
+		border-right-color: var(--light-blue);
+		border-radius: 0.5rem;
+	}
+}

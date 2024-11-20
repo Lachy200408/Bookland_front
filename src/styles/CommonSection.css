@@ -1,0 +1,10 @@
+.common-section {
+	height: 100dvh;
+	position: relative;
+}
+
+@media only screen and (max-height: 640px) {
+	.common-section {
+		height: 110dvh;
+	}
+}

@@ -1,0 +1,86 @@
+.auth-container {
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+	padding-top: 4rem;
+}
+
+.auth-form {
+	position: absolute;
+	bottom: -0.4rem;
+
+	padding: 1rem;
+	border: 1px solid var(--light-shadow-color);
+	border-radius: clamp(1rem, 50%, 2rem) clamp(1rem, 50%, 2rem) 0 0;
+	height: 512px;
+	width: min(512px, 90vw);
+	background-image: linear-gradient(to bottom, #84d2f608, #84d2f610);
+	backdrop-filter: blur(4px);
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.auth-form > hgroup {
+	text-align: center;
+}
+.auth-form > hgroup h3 {
+	font-size: 2.4rem;
+}
+.auth-form > hgroup h5 {
+	font-size: 1.2rem;
+}
+
+.auth-form form {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	flex-grow: 1;
+	width: min(320px, 100%);
+}
+
+.auth-form form[aria-disabled='true'] {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+.auth-form form > div {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+	width: 100%;
+}
+
+.auth-form form label {
+	display: grid;
+	font-size: smaller;
+	gap: 0.4rem;
+	width: 100%;
+}
+
+.auth-form form input {
+	background: none;
+	border: solid var(--color);
+	border-width: 0.9px;
+	border-radius: 8px;
+	padding: 0.4rem 0.6rem;
+	transition: outline 0.1s linear;
+	filter: none;
+}
+
+.auth-form form input:focus {
+	outline: none;
+	outline: 1px solid var(--color);
+}
+
+@media only screen and (prefers-color-scheme: light) {
+	.auth-form {
+		background-image: linear-gradient(to bottom, #84d2f608, #84d2f610);
+		box-shadow: 0 0 16px -8px var(--dark-shadow-color);
+	}
+}

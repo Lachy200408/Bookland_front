@@ -1,0 +1,47 @@
+.loading {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 1rem;
+	border-radius: 1rem;
+	background-image: linear-gradient(to right, #84d2f604, #84d2f608);
+	backdrop-filter: blur(0.5rem);
+	padding: 1rem;
+}
+
+.loader {
+	display: block;
+	position: relative;
+	background-image: conic-gradient(
+		var(--blue),
+		var(--light-blue),
+		var(--light-blue-25),
+		transparent,
+		transparent
+	);
+	width: 1.5rem;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	animation: rotate 2s linear infinite;
+}
+
+.loader::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	width: 86%;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background-color: var(--background-color);
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}

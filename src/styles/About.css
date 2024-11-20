@@ -1,0 +1,100 @@
+.about-container {
+	padding-top: 4rem;
+}
+
+.about-main {
+	position: relative;
+	display: grid;
+	align-content: center;
+	justify-items: center;
+	gap: 2.5rem;
+	padding-inline: 1rem;
+	height: 100%;
+}
+
+.about-main .about-header {
+	display: grid;
+	place-items: center;
+	padding: 6rem;
+	background-image: url('https://bookland-images.onrender.com/svg/book-background.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: aliceblue;
+}
+
+.about-main .about-description {
+	text-align: center;
+	max-width: min(32rem, 80%);
+}
+
+.about-main .about-description .highlight {
+	color: transparent;
+	background-image: linear-gradient(to right, var(--blue), var(--light-blue));
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+
+.about-main .about-description span {
+	color: var(--color);
+	background-image: transparent;
+	-webkit-background-clip: unset;
+	background-clip: unset;
+	text-decoration: underline;
+}
+
+.about-main .about-description span:hover {
+	color: transparent;
+	background-image: linear-gradient(to right, var(--blue), var(--light-blue));
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+
+.about-main .down-light {
+	position: absolute;
+	z-index: -5;
+	bottom: 0rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height: 4rem;
+	overflow: hidden;
+}
+
+.about-main .down-light div {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	translate: -50% 0;
+	width: min(16rem, 70%);
+	height: 0.25rem;
+	background-image: radial-gradient(
+		var(--blue),
+		var(--light-blue),
+		transparent
+	);
+	filter: blur(1rem);
+	border-radius: 50%;
+}
+
+@media only screen and (prefers-color-scheme: light) {
+	.about-main .down-light div {
+		height: 1rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.about-main .about-description {
+		font-size: smaller;
+	}
+
+	.about-main .about-header {
+		padding: 4rem;
+	}
+}
+
+@media only screen and (max-width: 512px) {
+	.about-main .about-header {
+		padding: 2.5rem;
+	}
+}

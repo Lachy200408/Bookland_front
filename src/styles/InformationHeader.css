@@ -1,0 +1,38 @@
+.information-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 0.5rem;
+	border: 1px solid var(--mid-shadow-color);
+	border-radius: 1rem;
+	padding: 1rem;
+	background-image: linear-gradient(
+		to bottom,
+		var(--light-blue-2),
+		var(--light-blue-5)
+	);
+	backdrop-filter: blur(0.25rem);
+}
+
+.information-header > * {
+	text-align: center;
+	text-wrap-style: balance;
+}
+
+.information-header a {
+	color: var(--light-blue) !important;
+	font-size: smaller;
+}
+
+@media only screen and (max-width: 512px) {
+	.information-header {
+		font-size: smaller;
+	}
+}
+
+@media only screen and (prefers-color-scheme: light) {
+	.information-header a {
+		color: var(--blue) !important;
+	}
+}

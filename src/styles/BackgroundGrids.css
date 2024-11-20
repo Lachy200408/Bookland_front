@@ -1,0 +1,46 @@
+.background-grid-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: -10;
+	overflow: hidden;
+}
+
+.background-grid {
+	position: absolute;
+	display: block;
+	width: min(512px, 75vw);
+	height: auto;
+	opacity: 0.1;
+}
+
+.background-grid:nth-child(1) {
+	top: 0;
+	left: 0;
+	translate: -30% -50%;
+}
+
+.background-grid:nth-child(2) {
+	top: 0;
+	right: 0;
+	translate: 30% -50%;
+}
+
+.background-grid:nth-child(3) {
+	bottom: 0;
+	left: 0;
+	translate: -30% 50%;
+}
+
+.background-grid:nth-child(4) {
+	bottom: 0;
+	right: 0;
+	translate: 30% 50%;
+}
+
+.background-grid #SVGID_1_ > stop {
+	stop-color: var(--color);
+}

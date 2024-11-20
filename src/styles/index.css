@@ -1,0 +1,38 @@
+@import url('./text.css');
+@import url('./light-dark.css');
+@import url('./crosever.css');
+
+:root {
+	color-scheme: light dark;
+	color: var(--color);
+
+	--blue: #59a5d8;
+	--blue-75: #59a5d8c0;
+	--blue-50: #59a5d880;
+	--blue-25: #59a5d840;
+	--blue-10: #59a5d818;
+	--blue-5: #59a5d808;
+	--blue-2: #59a5d804;
+	--light-blue: #84d2f6;
+	--light-blue-75: #84d2f6c0;
+	--light-blue-50: #84d2f680;
+	--light-blue-25: #84d2f640;
+	--light-blue-10: #84d2f618;
+	--light-blue-5: #84d2f608;
+	--light-blue-2: #84d2f604;
+	--red: #a53860;
+	--light-red: #b7245c;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: var(--background-color);
+	scroll-behavior: smooth;
+	scrollbar-color: var(--scrollbar-color) var(--background-color);
+	overflow: hidden scroll;
+}

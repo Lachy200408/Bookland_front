@@ -1,0 +1,18 @@
+.social-list {
+	width: 100%;
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 128px);
+	justify-content: center;
+	gap: 1rem;
+}
+
+.social-item {
+	display: grid;
+	justify-items: center;
+}
+
+.social-item-img {
+	display: block;
+	width: 6rem;
+}

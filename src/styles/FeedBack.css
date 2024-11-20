@@ -1,0 +1,60 @@
+.feedback-list {
+	position: fixed;
+	z-index: 100;
+	top: 100dvh;
+	left: 0;
+	translate: 0 -100%;
+	padding: 1.4rem;
+	list-style: none;
+	display: grid;
+	gap: 1rem;
+}
+
+.feedback-item {
+	position: relative;
+	padding: 0.5rem 4rem 0.5rem 1rem;
+	border: 1px solid var(--light-shadow-color);
+	border-radius: 0.5rem;
+	backdrop-filter: blur(8px);
+	background-image: linear-gradient(to right, #84d2f608, #84d2f610);
+}
+
+.feedback-item .close-button {
+	position: absolute;
+	top: 50%;
+	right: 0.5rem;
+	translate: 0 -50%;
+	width: 1.2rem;
+	height: 1.2rem;
+	border: none;
+	background: none;
+	color: aliceblue;
+	opacity: 0.75;
+	transform: scale(0.9);
+	cursor: pointer;
+	transition:
+		opacity 0.2s ease-in-out,
+		transform 0.2s ease-in-out;
+	transform-origin: center;
+}
+
+.feedback-item .close-button:hover {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.feedback-item .close-button:active {
+	opacity: 0.75;
+	transform: scale(0.9);
+}
+
+@media only screen and (prefers-color-scheme: light) {
+	.feedback-item {
+		background-image: linear-gradient(
+			to right,
+			var(--blue-75),
+			var(--light-blue-75)
+		);
+		color: var(--background-color);
+	}
+}
