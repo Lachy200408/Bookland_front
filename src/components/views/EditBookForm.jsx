@@ -1,6 +1,6 @@
-import Button from '../common/Button.jsx'
-import XMarkIcon from '../icons/XMarkIcon.jsx'
-import '../../styles/BookForm.css'
+import Button from '/src/components/common/Button.jsx'
+import XMarkIcon from '/src/components/icons/XMarkIcon.jsx'
+import '/src/styles/BookForm.css'
 
 export default function EditBookForm({
 	onCloseModal,

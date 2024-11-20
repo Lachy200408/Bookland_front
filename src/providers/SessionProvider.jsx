@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react'
-import { sessionContext } from '../contexts/sessionContext.js'
-import { useCheckAuth, useLogout } from '../hooks/useAuth.js'
-import { navigate } from '../utils/navigate.js'
-import { sessionDefaultValue } from '../constants/context-default.js'
+import { sessionContext } from '/src/contexts/sessionContext.js'
+import { useCheckAuth, useLogout } from '/src/hooks/useAuth.js'
+import { navigate } from '/src/utils/navigate.js'
+import { sessionDefaultValue } from '/src/constants/context-default.js'
 import {
 	readUserSession,
 	writeUserSession,
 	clearUserSession
-} from '../utils/sessionStorage.js'
+} from '/src/utils/sessionStorage.js'
 
 export default function SessionProvider({ children }) {
 	const [session, setSession] = useState(sessionDefaultValue)

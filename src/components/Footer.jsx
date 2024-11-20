@@ -1,9 +1,9 @@
-import FacebookIcon from './icons/FacebookIcon.jsx'
-import GithubIcon from './icons/GithubIcon.jsx'
-import GmailIcon from './icons/GmailIcon.jsx'
-import LinkedInIcon from './icons/LinkedInIcon.jsx'
-import TwitterIcon from './icons/TwitterIcon.jsx'
-import Link from './common/Link.jsx'
+import FacebookIcon from '/src/components/icons/FacebookIcon.jsx'
+import GithubIcon from '/src/components/icons/GithubIcon.jsx'
+import GmailIcon from '/src/components/icons/GmailIcon.jsx'
+import LinkedInIcon from '/src/components/icons/LinkedInIcon.jsx'
+import TwitterIcon from '/src/components/icons/TwitterIcon.jsx'
+import Link from '/src/components/common/Link.jsx'
 import '/src/styles/Footer.css'
 
 export default function Footer() {

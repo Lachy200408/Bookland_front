@@ -1,6 +1,6 @@
-import Landing from './Landing.jsx'
-import Dashboard from './Dashboard.jsx'
-import { useSessionContext } from '../../contexts/sessionContext.js'
+import Landing from '/src/components/routes/Landing.jsx'
+import Dashboard from '/src/components/routes/Dashboard.jsx'
+import { useSessionContext } from '/src/contexts/sessionContext.js'
 
 export default function MainContainer() {
 	const {

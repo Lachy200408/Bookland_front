@@ -1,5 +1,5 @@
-import { API } from '../constants/api.js'
-import { useCreateApiHook } from './useCreateApiHook.js'
+import { API } from '/src/constants/api.js'
+import { useCreateApiHook } from '/src/hooks/useCreateApiHook.js'
 
 export const useUpdateAvatar = () => {
 	const updateAvatar = ({ avatarname }) => {

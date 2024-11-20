@@ -1,4 +1,4 @@
-import '../../styles/Loading.css'
+import '/src/styles/Loading.css'
 
 export default function Loading({ children, className }) {
 	return (

@@ -1,12 +1,12 @@
-import MainContainer from '../components/routes/MainContainer'
-import About from '../components/routes/About'
-import Social from '../components/routes/Social'
-import Auth from '../components/routes/Auth'
-import Store from '../components/routes/Store'
-import HomeIcon from '../components/icons/HomeIcon'
-import AboutIcon from '../components/icons/AboutIcon'
-import StoreIcon from '../components/icons/StoreIcon'
-import SocialIcon from '../components/icons/SocialIcon'
+import MainContainer from '/src/components/routes/MainContainer'
+import About from '/src/components/routes/About'
+import Social from '/src/components/routes/Social'
+import Auth from '/src/components/routes/Auth'
+import Store from '/src/components/routes/Store'
+import HomeIcon from '/src/components/icons/HomeIcon'
+import AboutIcon from '/src/components/icons/AboutIcon'
+import StoreIcon from '/src/components/icons/StoreIcon'
+import SocialIcon from '/src/components/icons/SocialIcon'
 
 export const routes = [
 	{

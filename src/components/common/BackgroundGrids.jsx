@@ -1,4 +1,4 @@
-import BackgroundGrid from '../icons/BackgroundGrid'
+import BackgroundGrid from '/src/components/icons/BackgroundGrid'
 import '/src/styles/BackgroundGrids.css'
 
 export default function BackgroundGridContainer() {

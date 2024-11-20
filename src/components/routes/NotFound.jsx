@@ -1,6 +1,6 @@
-import CommonSection from '../common/CommonSection.jsx'
-import Link from '../common/Link.jsx'
-import '../../styles/NotFound.css'
+import CommonSection from '/src/components/common/CommonSection.jsx'
+import Link from '/src/components/common/Link.jsx'
+import '/src/styles/NotFound.css'
 
 export default function NotFound() {
 	return (

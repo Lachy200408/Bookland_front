@@ -1,10 +1,10 @@
-import Button from '../common/Button.jsx'
-import XMarkIcon from '../icons/XMarkIcon.jsx'
-import SocialList from '../common/SocialList.jsx'
-import Loading from '../common/Loading.jsx'
-import { useGetSocialUsers } from '../../hooks/useApiUser.js'
+import Button from '/src/components/common/Button.jsx'
+import XMarkIcon from '/src/components/icons/XMarkIcon.jsx'
+import SocialList from '/src/components/common/SocialList.jsx'
+import Loading from '/src/components/common/Loading.jsx'
+import { useGetSocialUsers } from '/src/hooks/useApiUser.js'
 import { useEffect, useState } from 'react'
-import '../../styles/BookForm.css'
+import '/src/styles/BookForm.css'
 
 export default function ShareBookForm({ onCloseModal, onSubmit }) {
 	const [selected, setSelected] = useState()

@@ -1,5 +1,5 @@
-import '../../styles/Link.css'
-import { navigate } from '../../utils/navigate.js'
+import '/src/styles/Link.css'
+import { navigate } from '/src/utils/navigate.js'
 
 export default function Link({ target, href, ...props }) {
 	const handleClick = (event) => {

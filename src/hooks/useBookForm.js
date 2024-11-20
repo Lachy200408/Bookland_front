@@ -1,6 +1,6 @@
-import { ERRORS } from '../constants/errors.js'
+import { ERRORS } from '/src/constants/errors.js'
 import { useState } from 'react'
-import { useModal } from './useModal.js'
+import { useModal } from '/src/hooks/useModal.js'
 
 export const useAddBookForm = ({ onUpload, onCreate }) => {
 	const { modalOpen, onOpenModal, onCloseModal } = useModal()
